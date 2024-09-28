@@ -115,12 +115,7 @@ function sendOtp() {
             $("#errorAlert").slideUp();
          }, 3000);
       },
-      error: function(error) {
-         $("#loader").hide();
-         $(".btn-primary").prop("disabled", false);
-         $("#errorAlert").removeClass("alert-success").addClass("alert-danger");
-         $("#errorAlert").text("Gagal mengirim kode aktivasi. Silakan coba lagi.").show();
-      }
+      
    });
 };        
 
